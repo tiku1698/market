@@ -1,0 +1,408 @@
+﻿@model DeliveryMarketplace.Models.Booking
+
+@{
+    ViewBag.Title = "Edit";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h2>Edit Bookings</h2>
+<style>
+    textarea {
+        width: 400px;
+        height: 60px;
+    }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Edit Booking Details</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.BookingID)
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.UserID)
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.DriverID)
+
+    @if (Session["LoginRole"].ToString() == "Driver")
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductID, "Product Name:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ProductID", null, htmlAttributes: new { @class = "form-control", @readonly = "readonly" })
+                @Html.ValidationMessageFor(model => model.ProductID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductID, "Product Name:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ProductID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ProductID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+
+    @if (Session["LoginRole"].ToString() == "Driver")
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserID, "User Name:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("UserID", null, htmlAttributes: new { @class = "form-control", @readonly = "readonly" })
+                @Html.ValidationMessageFor(model => model.UserID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserID, "User Name:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("UserID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.UserID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+
+    @if (Session["LoginRole"].ToString() == "Driver")
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.PickupAddress, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.PickupAddress, new { @class = "form-control", @readonly = "readonly" })
+                @Html.ValidationMessageFor(model => model.PickupAddress, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.PickupAddress, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.PickupAddress, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PickupAddress, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PickupLoc, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.EditorFor(model => model.PickupLoc, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+            @Html.ValidationMessageFor(model => model.PickupLoc, "", new { @class = "text-danger" })
+        </div>
+        @if (Session["LoginRole"].ToString() == "Admin" || Session["LoginRole"].ToString() == "User")
+        {
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#PickLoc">
+                Get Pickup Location
+            </button>
+        }
+    </div>
+    @if (Session["LoginRole"].ToString() == "Driver")
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.DeliveryAddress, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.DeliveryAddress, new { @class = "form-control", @readonly = "readonly" })
+                @Html.ValidationMessageFor(model => model.DeliveryAddress, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.DeliveryAddress, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.DeliveryAddress, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DeliveryAddress, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.DeliverLoc, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-4">
+            @Html.EditorFor(model => model.DeliverLoc, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+            @Html.ValidationMessageFor(model => model.DeliverLoc, "", new { @class = "text-danger" })
+        </div>
+        @if (Session["LoginRole"].ToString() == "Admin" || Session["LoginRole"].ToString() == "User")
+        {
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#DropLoc">
+                Get Delivery Location
+            </button>
+        }
+
+    </div>
+    @if (Session["LoginRole"].ToString() == "Admin" || Session["LoginRole"].ToString() == "Driver")
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Status, new SelectList(Enum.GetValues(typeof(Status))),
+             "Select Status", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+
+    @if (Session["LoginRole"].ToString() == "Admin")
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    }
+
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-success" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<div class="modal fade" id="PickLoc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Select Pickup Location</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="dvMapPick" class="card" style="width: 100%; height: 400px">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button onclick="SavePickLoc()" type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="DropLoc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Select Delivery Location</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="dvMapDrop" class="card" style="width: 100%; height: 400px">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button onclick="SaveDropLoc()" type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        var DropMarkers = [];
+        var map = "";
+        var mapOptions;
+        var PickMarkers = [];
+        var Pickmap = "";
+        var PickmapOptions;
+        var picklatlng = "";
+        var droplatlng = "";
+        window.onload = function () {
+            //dv map drop
+            map;
+            DropMarkers.push(JSON.parse($("#DeliverLoc").val()));
+
+            console.log(DropMarkers);
+            if (DropMarkers.length > 0) {
+                mapOptions = {
+                    center: new google.maps.LatLng(DropMarkers[0].lat, DropMarkers[0].lng),
+                    zoom: 4,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+            } else {
+                mapOptions = {
+                    center: new google.maps.LatLng("-33.85", "151.05"),
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+            }
+
+            var infoWindow = new google.maps.InfoWindow();
+            map = new google.maps.Map(document.getElementById("dvMapDrop"), mapOptions);
+            for (i = 0; i < DropMarkers.length; i++) {
+                var data = DropMarkers[i]
+                var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                var Dropmarker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: data.title
+                });
+                (function (Dropmarker, data) {
+                    google.maps.event.addListener(Dropmarker, "click", function (e) {
+                        infoWindow.setContent(data.description);
+                        infoWindow.open(map, Dropmarker);
+                    });
+                })(Dropmarker, data);
+                // Create the initial InfoWindow.
+                let infoWindow = new google.maps.InfoWindow({
+                    content: "Click the map to get Lat/Lng!",
+                    position: myLatlng,
+                });
+
+                infoWindow.open(dvMapDrop);
+            }
+
+            // Configure the click listener.
+            map.addListener("click", (mapsMouseEvent) => {
+                // Close the current InfoWindow.
+                droplatlng = JSON.stringify(mapsMouseEvent.latLng.toJSON(), null, 2);
+
+                var latLng = mapsMouseEvent.latLng;
+                console.log("Marker");
+
+                // if marker exists and has a .setMap method, hide it
+                if (Dropmarker && Dropmarker.setMap) {
+                    Dropmarker.setMap(null);
+                }
+                Dropmarker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: "Drop"
+                });
+
+                var pt = new google.maps.LatLng(mapsMouseEvent.latLng.lat(), mapsMouseEvent.latLng.lng());
+                map.setCenter(pt);
+                map.setZoom(15);
+
+            });
+
+            //dv map pick
+
+            Pickmap;
+            PickMarkers.push(JSON.parse($("#PickupLoc").val()));
+
+            console.log(PickMarkers);
+            if (PickMarkers.length > 0) {
+                PickmapOptions = {
+                    center: new google.maps.LatLng(PickMarkers[0].lat, PickMarkers[0].lng),
+                    zoom: 4,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+            } else {
+                PickmapOptions = {
+                    center: new google.maps.LatLng("-33.85", "151.05"),
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+            }
+
+            var infoWindow = new google.maps.InfoWindow();
+            Pickmap = new google.maps.Map(document.getElementById("dvMapPick"), PickmapOptions);
+            for (i = 0; i < PickMarkers.length; i++) {
+                var data = PickMarkers[i]
+                var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: Pickmap,
+                    title: data.title
+                });
+                (function (marker, data) {
+                    google.maps.event.addListener(marker, "click", function (e) {
+                        infoWindow.setContent(data.description);
+                        infoWindow.open(Pickmap, marker);
+                    });
+                })(marker, data);
+                // Create the initial InfoWindow.
+                let infoWindow = new google.maps.InfoWindow({
+                    content: "Click the map to get Lat/Lng!",
+                    position: myLatlng,
+                });
+
+                infoWindow.open(dvMapPick);
+            }
+
+            // Configure the click listener.
+            Pickmap.addListener("click", (mapsMouseEvent) => {
+                // Close the current InfoWindow.
+                picklatlng = JSON.stringify(mapsMouseEvent.latLng.toJSON(), null, 2)
+
+                //infoWindow.open(map);
+
+                var PlatLng = mapsMouseEvent.latLng;
+                console.log("Marker");
+                // if marker exists and has a .setMap method, hide it
+                if (marker && marker.setMap) {
+                    marker.setMap(null);
+                }
+                marker = new google.maps.Marker({
+                    position: PlatLng,
+                    map: Pickmap,
+                    title: "Pickup"
+                });
+
+                var pt = new google.maps.LatLng(mapsMouseEvent.latLng.lat(), mapsMouseEvent.latLng.lng());
+                Pickmap.setCenter(pt);
+                Pickmap.setZoom(15);
+
+            });
+        }
+
+
+        function SavePickLoc() {
+            console.log(picklatlng);
+            $("#PickupLoc").val(picklatlng);
+            $('#PickLoc').modal('hide');
+            //$('#DropLoc').modal({ backdrop: 'static', keyboard: false }, 'hide');
+        }
+        function SaveDropLoc() {
+            console.log(droplatlng);
+            $("#DeliverLoc").val(droplatlng);
+            $('#DropLoc').modal('hide');
+            //$('#DropLoc').modal({ backdrop: 'static', keyboard: false }, 'hide');
+        }
+    </script>
+
+}

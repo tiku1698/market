@@ -1,0 +1,186 @@
+﻿@model DeliveryMarketplace.Models.Booking
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Bookings Details</h2>
+
+<div>
+    <h4>Bookings Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Role)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Role)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PickupAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickupAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PickupLoc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickupLoc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliverLoc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliverLoc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Map:")
+        </dt>
+
+        <dd>
+            <button onclick="ViewLoc(@Model.PickupLoc,@Model.DeliverLoc)" type="button" class="btn btn-success">
+                View Location
+            </button>
+            <div class="modal fade" id="PickLoc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Location Details</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="dvMapDrop" class="card" style="width: 100%; height: 400px">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dd>
+    </dl>
+</div>
+@if (Session["LoginRole"].ToString() == "Admin")
+{
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.BookingID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        var DropMarkers = [];
+        var markerList = [];
+        var map = "";
+        var mapOptions;
+        var PickMarkers = [];
+        var Pickmap = "";
+        var PickmapOptions;
+        var Viewlatlng = "";
+        window.onload = function () {
+            //dv map drop
+            map;
+            mapOptions = {
+                center: new google.maps.LatLng("-33.85", "151.05"),
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+
+            map = new google.maps.Map(document.getElementById("dvMapDrop"), mapOptions);
+
+        }
+
+        function ViewLoc(pick, drop) {
+            DropMarkers = [];
+            for (var i = 0; i < markerList.length; i++) {
+                if (markerList[i] && markerList[i].setMap) {
+                    markerList[i].setMap(null);
+                }
+            }
+
+            
+
+            DropMarkers.push(pick);
+            DropMarkers.push(drop);
+            $('#PickLoc').modal('show');
+            for (i = 0; i < DropMarkers.length; i++) {
+                var data = DropMarkers[i]
+                var info = "PickUp"
+                if (i > 0) {
+                    info = "Drop"
+                }
+
+                map.setCenter({ lat: data.lat, lng: data.lng });
+                var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                var Dropmarker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: info
+                });
+                markerList.push(Dropmarker);
+                (function (Dropmarker, data) {
+                    google.maps.event.addListener(Dropmarker, "click", function (e) {
+                        infoWindow.setContent(Dropmarker.title);
+                        infoWindow.open(map, Dropmarker);
+                    });
+                })(Dropmarker, data);
+                // Create the initial InfoWindow.
+                let infoWindow = new google.maps.InfoWindow({
+                    content: "Click the map to get Lat/Lng!",
+                    position: myLatlng,
+                });
+
+                infoWindow.open(dvMapDrop);
+            }
+            map.setZoom(12);
+
+        }
+
+    </script>
+}

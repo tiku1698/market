@@ -1,0 +1,375 @@
+﻿@model IEnumerable<DeliveryMarketplace.Models.Booking>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+
+    /* Style tab links */
+    .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+    }
+
+        .tablink:hover {
+            background-color: #777;
+        }
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h2>Driver Bookings List</h2>
+
+<button class="tablink" onclick="openPage('Pending', this)" id="defaultOpen">Pending</button>
+<button class="tablink" onclick="openPage('Booked', this)">Booked</button>
+
+<div id="Pending" class="tabcontent">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Product.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PickupAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PickupLoc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeliveryAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeliverLoc)
+            </th>
+            <th>
+                @Html.DisplayName("View:")
+            </th>
+            <th>
+                @Html.DisplayName("Action:")
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Where(m => m.Status == "Pending" || m.Status == "Rejected" && m.DriverID != Convert.ToInt32(Session["LoginUserID"])))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Product.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td id="Prices">
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PickupAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PickupLoc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DeliveryAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DeliverLoc)
+                </td>
+                <th>
+                    <button onclick="ViewLoc(@item.PickupLoc,@item.DeliverLoc)" type="button" class="btn btn-success">
+                        Map
+                    </button>
+                </th>
+
+                @if (Session["LoginRole"].ToString() == "Admin" || Session["LoginRole"].ToString() == "User")
+                {
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.BookingID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.BookingID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.BookingID })
+                    </td>
+
+
+                }
+                else
+                {
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.BookingID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.BookingID })
+                    </td>
+
+                }
+
+            </tr>
+        }
+
+    </table>
+</div>
+
+<div id="Booked" class="tabcontent">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Product.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PickupAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PickupLoc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeliveryAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeliverLoc)
+            </th>
+            <th>
+                @Html.DisplayName("View:")
+            </th>
+            <th>
+                @Html.DisplayName("Action:")
+            </th>
+        </tr>
+        @if (Session["LoginRole"].ToString() == "Admin")
+        {
+            foreach (var item in Model.Where(m => m.Status != "Pending"))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Product.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td id="Prices">
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PickupAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PickupLoc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DeliveryAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DeliverLoc)
+                    </td>
+                    <th>
+                        <button onclick="ViewLoc(@item.PickupLoc,@item.DeliverLoc)" type="button" class="btn btn-success">
+                            Map
+                        </button>
+
+                    </th>
+                    <td>
+                            @Html.ActionLink("Details", "Details", new { id = item.BookingID })
+                    </td>
+                </tr>
+            }
+        }
+
+        else
+        {
+            foreach (var item in Model.Where(m => m.Status != "Pending" && m.Status !="Rejected" && m.DriverID == Convert.ToInt32(Session["LoginUserID"])))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Product.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td id="Prices">
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PickupAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PickupLoc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DeliveryAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DeliverLoc)
+                    </td>
+                    <th>
+                        <button onclick="ViewLoc(@item.PickupLoc,@item.DeliverLoc)" type="button" class="btn btn-success">
+                            Map
+                        </button>
+
+                    </th>
+                        <td>
+                            @Html.ActionLink("Details", "Details", new { id = item.BookingID })
+                        </td>
+                </tr>
+            }
+        }
+
+
+    </table>
+</div>
+
+<div class="modal fade" id="PickLoc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Select Pickup Location</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="dvMapDrop" class="card" style="width: 100%; height: 400px">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        var DropMarkers = [];
+        var markerList = [];
+        var map = "";
+        var mapOptions;
+        var PickMarkers = [];
+        var Pickmap = "";
+        var PickmapOptions;
+        var Viewlatlng = "";
+        window.onload = function () {
+            //dv map drop
+            map;
+            mapOptions = {
+                center: new google.maps.LatLng("-33.85", "151.05"),
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+
+            map = new google.maps.Map(document.getElementById("dvMapDrop"), mapOptions);
+
+        }
+
+        function ViewLoc(pick, drop) {
+            DropMarkers = [];
+            for (var i = 0; i < markerList.length; i++) {
+                if (markerList[i] && markerList[i].setMap) {
+                    markerList[i].setMap(null);
+                }
+            }
+
+
+            DropMarkers.push(pick);
+            DropMarkers.push(drop);
+            $('#PickLoc').modal('show');
+            for (i = 0; i < DropMarkers.length; i++) {
+                var data = DropMarkers[i]
+                var info = "PickUp"
+                if (i > 0) {
+                    info = "Drop"
+                }
+
+                map.setCenter({ lat: data.lat, lng: data.lng });
+                var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                var Dropmarker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: info
+                });
+                markerList.push(Dropmarker);
+                (function (Dropmarker, data) {
+                    google.maps.event.addListener(Dropmarker, "click", function (e) {
+                        infoWindow.setContent(Dropmarker.title);
+                        infoWindow.open(map, Dropmarker);
+                    });
+                })(Dropmarker, data);
+                // Create the initial InfoWindow.
+                let infoWindow = new google.maps.InfoWindow({
+                    content: "Click the map to get Lat/Lng!",
+                    position: myLatlng,
+                });
+
+                infoWindow.open(dvMapDrop);
+            }
+            map.setZoom(12);
+
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        function openPage(pageName, elmnt) {
+            // Hide all elements with class="tabcontent" by default */
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            // Show the specific tab content
+            document.getElementById(pageName).style.display = "block";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    @*<script>
+            $("#Prices").each(function () {
+                $("#Prices").html('($)'+ $("#Prices").html());
+            });
+        </script>*@
+}
+
+

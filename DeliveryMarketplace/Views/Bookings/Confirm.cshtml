@@ -1,0 +1,45 @@
+﻿@model DeliveryMarketplace.Models.Booking
+
+@{
+    ViewBag.Title = "Confirm";
+}
+
+<h2>Confirm Booking</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <h4>Booking Details</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+
+            <p>Delivery Bookings Details Are As Below</p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Pickup Address : @Html.DisplayFor(model => model.PickupAddress)</h4>
+            <h4>Pickup Location : @Html.DisplayFor(model => model.PickupLoc)</h4>
+            <h4>Delivery Address : @Html.DisplayFor(model => model.DeliveryAddress)</h4>
+            <h4>Delivery Location : @Html.DisplayFor(model => model.DeliverLoc)</h4>
+            <h4>Price : @Html.DisplayFor(model => model.Price)</h4>
+            <div class="form-group" style="margin-left:2%">
+                <div class="col-md-offset-2 col-md-10">
+                    <input id="Conf" type="submit" value="Confirm" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+@*<script language="JavaScript" type="text/javascript">
+    $("#Conf").click(function () {
+        alert("Your Order Booked Successfully.Thank You For The Booking. Our Driver Will Contact You Soon.Have A Nice Day");
+    });
+</script>*@
+}

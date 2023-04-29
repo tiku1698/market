@@ -1,0 +1,267 @@
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\DeliveryMarketplace.dll.config
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\DeliveryMarketplace.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\DeliveryMarketplace.pdb
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\csc.exe
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\csc.exe.config
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\csc.rsp
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\csi.exe
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\csi.exe.config
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\csi.rsp
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.AppContext.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Console.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.IO.Compression.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Net.Http.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.ValueTuple.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\vbc.exe
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\vbc.exe.config
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\vbc.rsp
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\VBCSCompiler.exe
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\Antlr3.Runtime.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\EntityFramework.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\EntityFramework.SqlServer.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\Newtonsoft.Json.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Net.Http.Formatting.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Helpers.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Http.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Http.WebHost.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Mvc.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Optimization.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Razor.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.WebPages.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.WebPages.Razor.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\WebGrease.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\EntityFramework.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\EntityFramework.SqlServer.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Helpers.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Mvc.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Optimization.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Razor.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.WebPages.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.WebPages.Razor.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\Newtonsoft.Json.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\Antlr3.Runtime.pdb
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Net.Http.Formatting.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Http.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\System.Web.Http.WebHost.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Verma\source\repos\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.csproj.AssemblyReference.cache
+C:\Users\Verma\source\repos\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.csproj.CoreCompileInputs.cache
+C:\Users\Verma\source\repos\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.csproj.CopyComplete
+C:\Users\Verma\source\repos\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.dll
+C:\Users\Verma\source\repos\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.pdb
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\DeliveryMarketplace.dll.config
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\DeliveryMarketplace.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\DeliveryMarketplace.pdb
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\csc.exe
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\csc.exe.config
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\csc.rsp
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\csi.exe
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\csi.exe.config
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\csi.rsp
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.Managed.Core.targets
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.AppContext.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Collections.Immutable.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Console.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Globalization.Calendars.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.IO.Compression.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.IO.FileSystem.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Net.Http.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Net.Sockets.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Reflection.Metadata.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.ValueTuple.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Xml.XmlDocument.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Xml.XPath.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\vbc.exe
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\vbc.exe.config
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\vbc.rsp
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\VBCSCompiler.exe
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\roslyn\VBCSCompiler.exe.config
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\Antlr3.Runtime.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\EntityFramework.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\EntityFramework.SqlServer.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\Microsoft.Web.Infrastructure.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\Newtonsoft.Json.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Net.Http.Formatting.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Helpers.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Http.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Http.WebHost.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Mvc.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Optimization.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Razor.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.WebPages.Deployment.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.WebPages.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.WebPages.Razor.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\WebGrease.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\EntityFramework.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\EntityFramework.SqlServer.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Helpers.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Mvc.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Optimization.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Razor.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.WebPages.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.WebPages.Deployment.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.WebPages.Razor.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\Newtonsoft.Json.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\Antlr3.Runtime.pdb
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Net.Http.Formatting.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Http.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\System.Web.Http.WebHost.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.csproj.AssemblyReference.cache
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.csproj.CoreCompileInputs.cache
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.csproj.CopyComplete
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.dll
+D:\New folder\DeliveryMarketplace\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.pdb
+D:\Project\DeliveryMarketplace\bin\DeliveryMarketplace.dll.config
+D:\Project\DeliveryMarketplace\bin\DeliveryMarketplace.dll
+D:\Project\DeliveryMarketplace\bin\DeliveryMarketplace.pdb
+D:\Project\DeliveryMarketplace\bin\roslyn\csc.exe
+D:\Project\DeliveryMarketplace\bin\roslyn\csc.exe.config
+D:\Project\DeliveryMarketplace\bin\roslyn\csc.rsp
+D:\Project\DeliveryMarketplace\bin\roslyn\csi.exe
+D:\Project\DeliveryMarketplace\bin\roslyn\csi.exe.config
+D:\Project\DeliveryMarketplace\bin\roslyn\csi.rsp
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\DeliveryMarketplace\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.AppContext.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Console.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.IO.Compression.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.IO.FileSystem.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Net.Http.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Net.Sockets.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.ValueTuple.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Xml.XPath.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project\DeliveryMarketplace\bin\roslyn\vbc.exe
+D:\Project\DeliveryMarketplace\bin\roslyn\vbc.exe.config
+D:\Project\DeliveryMarketplace\bin\roslyn\vbc.rsp
+D:\Project\DeliveryMarketplace\bin\roslyn\VBCSCompiler.exe
+D:\Project\DeliveryMarketplace\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\DeliveryMarketplace\bin\Antlr3.Runtime.dll
+D:\Project\DeliveryMarketplace\bin\EntityFramework.dll
+D:\Project\DeliveryMarketplace\bin\EntityFramework.SqlServer.dll
+D:\Project\DeliveryMarketplace\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\DeliveryMarketplace\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\DeliveryMarketplace\bin\Newtonsoft.Json.dll
+D:\Project\DeliveryMarketplace\bin\System.Net.Http.Formatting.dll
+D:\Project\DeliveryMarketplace\bin\System.Web.Helpers.dll
+D:\Project\DeliveryMarketplace\bin\System.Web.Http.dll
+D:\Project\DeliveryMarketplace\bin\System.Web.Http.WebHost.dll
+D:\Project\DeliveryMarketplace\bin\System.Web.Mvc.dll
+D:\Project\DeliveryMarketplace\bin\System.Web.Optimization.dll
+D:\Project\DeliveryMarketplace\bin\System.Web.Razor.dll
+D:\Project\DeliveryMarketplace\bin\System.Web.WebPages.Deployment.dll
+D:\Project\DeliveryMarketplace\bin\System.Web.WebPages.dll
+D:\Project\DeliveryMarketplace\bin\System.Web.WebPages.Razor.dll
+D:\Project\DeliveryMarketplace\bin\WebGrease.dll
+D:\Project\DeliveryMarketplace\bin\EntityFramework.xml
+D:\Project\DeliveryMarketplace\bin\EntityFramework.SqlServer.xml
+D:\Project\DeliveryMarketplace\bin\System.Web.Helpers.xml
+D:\Project\DeliveryMarketplace\bin\System.Web.Mvc.xml
+D:\Project\DeliveryMarketplace\bin\System.Web.Optimization.xml
+D:\Project\DeliveryMarketplace\bin\System.Web.Razor.xml
+D:\Project\DeliveryMarketplace\bin\System.Web.WebPages.xml
+D:\Project\DeliveryMarketplace\bin\System.Web.WebPages.Deployment.xml
+D:\Project\DeliveryMarketplace\bin\System.Web.WebPages.Razor.xml
+D:\Project\DeliveryMarketplace\bin\Newtonsoft.Json.xml
+D:\Project\DeliveryMarketplace\bin\Antlr3.Runtime.pdb
+D:\Project\DeliveryMarketplace\bin\System.Net.Http.Formatting.xml
+D:\Project\DeliveryMarketplace\bin\System.Web.Http.xml
+D:\Project\DeliveryMarketplace\bin\System.Web.Http.WebHost.xml
+D:\Project\DeliveryMarketplace\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.csproj.AssemblyReference.cache
+D:\Project\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.csproj.CoreCompileInputs.cache
+D:\Project\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.csproj.CopyComplete
+D:\Project\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.dll
+D:\Project\DeliveryMarketplace\obj\Debug\DeliveryMarketplace.pdb
